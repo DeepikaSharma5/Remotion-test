@@ -1,55 +1,37 @@
 import {spring} from 'remotion';
 import {useVideoConfig} from 'remotion';
 import React from 'react';
-import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, useCurrentFrame} from 'remotion';
 
-export const LineDiv = ({color}) => {
+export const LineDiv = ({color, marginTop, marginLeft}) => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
 	const config = useVideoConfig();
 
 	const progress = spring({
 		from: 163,
-		to: 3600,
+		to: 7000,
 		frame,
 		fps,
 		config: {mass: 1, damping: 1800},
 	});
 
-	const opacity = interpolate(progress, [0, 0.01], [-200, -50], {
-		extrapolateRight: 'clamp',
-	});
 	return (
 		<>
-			{/* <AbsoluteFill
-				style={{
-					justifyContent: 'center',
-					alignItems: 'start',
-					marginTop: '15rem',
-				}}
-			>
-				<div
-					style={{
-						backgroundColor: `${color}`,
-						height: '1%',
-						width: '30%',
-						transform: `translateY(${opacity}px, 0px)`,
-					}}
-				/>
-			</AbsoluteFill> */}
 			<AbsoluteFill
 				style={{
 					alignItems: 'center',
 					justifyContent: 'start',
 					justifyItems: 'center',
-					marginTop: '25.4%',
+					marginTop,
+					marginLeft,
 				}}
 			>
 				<svg
 					viewBox={`0 0 ${config.width} ${config.height}`}
-					width="3600px"
-					height="200px"
-					transform={`translate(${-240}, 0)`}
+					width="7000px"
+					height="100px"
+					transform={`translate(${-275}, 0)`}
 				>
 					<g id="g10">
 						<path

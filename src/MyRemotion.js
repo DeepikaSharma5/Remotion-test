@@ -11,6 +11,11 @@ import {LineDiv} from './lineDiv/LineDiv';
 import {OpenDivName} from './openDivName/OpenDivName';
 import {OpenDivGif1} from './openDIvGif1/OpenDivGif1';
 import {MiddleToRightLeftFullDiv} from './middleToRightLeftFullDiv/MiddleToRightLeftFullDiv';
+import {FadeInImage} from './fadeInImage/FadeInImage';
+import {SlideUpText} from './slideUpText/SlideUpText';
+import Deepika from './assets/deepika.jpg';
+import StageClip from './assets/stageclip.png';
+import {DoubleLogo} from './doubleLogo/DoubleLogo';
 
 export const MyRemotion = () => {
 	return (
@@ -34,22 +39,22 @@ export const MyRemotion = () => {
 				<TopToMiddleLogo />
 			</Sequence>
 			<Sequence from={135} durationInFrames={65}>
-				<LineDiv color="#4c9419" />
+				<LineDiv color="#4c9419" marginTop="25.4%" />
 			</Sequence>
 			<Sequence from={140} durationInFrames={60}>
 				<LineFont
 					titleColor="white"
 					titleText="WELLTECH"
-					bottom={350}
-					size={0.97}
+					bottom={320}
+					size="90px"
 				/>
 			</Sequence>
 			<Sequence from={150} durationInFrames={50}>
 				<LineFont
 					titleColor="white"
 					titleText="HEY GOOD"
-					bottom={250}
-					size={1.2}
+					bottom={230}
+					size="80px"
 				/>
 			</Sequence>
 			<Sequence from={160} durationInFrames={40}>
@@ -57,7 +62,7 @@ export const MyRemotion = () => {
 					titleColor="white"
 					titleText="18 MAY 2022"
 					bottom={150}
-					size={1.5}
+					size="75px"
 				/>
 			</Sequence>
 			<Sequence from={194} durationInFrames={11}>
@@ -74,7 +79,7 @@ export const MyRemotion = () => {
 					titleColor="white"
 					titleText="PROUDLY RECOGNIZED BY:"
 					bottom={850}
-					size={0.97}
+					size="80px"
 					weight="bold"
 				/>
 			</Sequence>
@@ -83,7 +88,7 @@ export const MyRemotion = () => {
 					titleColor="white"
 					titleText="TYSON GAY"
 					bottom={640}
-					size={1.0}
+					size="85px"
 					weight="bolder"
 				/>
 			</Sequence>
@@ -92,21 +97,62 @@ export const MyRemotion = () => {
 					titleColor="white"
 					titleText="AND BSN SPORTS IN COLLABORATION WITH"
 					bottom={540}
-					size={1.5}
+					size="50px"
 					weight="bold"
 				/>
 			</Sequence>
-			<Sequence from={260} durationInFrames={85}>
+			<Sequence from={260} durationInFrames={75}>
 				<OpenDivName
 					titleColor="white"
 					titleText="NIKE FOR GONG ABOVE AND BEYOND."
 					bottom={470}
-					size={1.5}
+					size="50px"
 					weight="bold"
 				/>
 			</Sequence>
 			<Sequence from={337} durationInFrames={40}>
 				<MiddleToRightLeftFullDiv color="#004766" />
+			</Sequence>
+			<Sequence from={385} durationInFrames={200}>
+				<SlideUpText size="40px" text="DEEPIKA" top="25%" />
+			</Sequence>
+			<Sequence from={390} durationInFrames={195}>
+				<FadeInImage img={Deepika} marginTop="5.5%" maxWidth="45%" />
+			</Sequence>
+			<Sequence from={394} durationInFrames={191}>
+				<LineDiv color="#004766" marginLeft="25%" marginTop="35%" />
+			</Sequence>
+			<Sequence from={395} durationInFrames={190}>
+				<SlideUpText size="40px" text="SRINIVASAN" top="35%" />
+			</Sequence>
+			<Sequence from={400} durationInFrames={185}>
+				<FadeInImage
+					img={StageClip}
+					marginTop="5.5%"
+					maxWidth="10%"
+					marginLeft="70%"
+				/>
+			</Sequence>
+			<Sequence from={410} durationInFrames={174}>
+				<DoubleLogo marginTop="40.5%" maxWidth="8%" marginLeft="63%" />
+			</Sequence>
+			<Sequence from={440} durationInFrames={145}>
+				<LineFont
+					titleColor="white"
+					titleText="1st lane"
+					bottom={480}
+					size="50px"
+					marginLeft="25%"
+				/>
+			</Sequence>
+			<Sequence from={450} durationInFrames={135}>
+				<LineFont
+					titleColor="white"
+					titleText="05"
+					bottom={400}
+					size="50px"
+					marginLeft="25%"
+				/>
 			</Sequence>
 		</div>
 	);
