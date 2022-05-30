@@ -1,15 +1,14 @@
 import {Img} from 'remotion';
 import React from 'react';
-import Background from '../assets/img_5.jpg';
 
-export const OpenDivGif1 = () => {
+export const OpenDivGif1 = ({video, filter}) => {
 	return (
 		<>
 			<Img
 				style={{
-					filter: 'grayscale(100%)',
+					filter,
 				}}
-				src={Background}
+				src={video}
 			/>
 		</>
 	);

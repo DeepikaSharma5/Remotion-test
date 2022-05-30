@@ -16,6 +16,8 @@ import {SlideUpText} from './slideUpText/SlideUpText';
 import Deepika from './assets/deepika.jpg';
 import StageClip from './assets/stageclip.png';
 import {DoubleLogo} from './doubleLogo/DoubleLogo';
+import Gif1 from './assets/img_5.jpg';
+import Gif2 from './assets/vid-0.gif';
 
 export const MyRemotion = () => {
 	return (
@@ -72,7 +74,7 @@ export const MyRemotion = () => {
 				<MiddleToTopTwoOpenDiv color="#4c9419" />
 			</Sequence>
 			<Sequence from={210} durationInFrames={125}>
-				<OpenDivGif1 />
+				<OpenDivGif1 filter="grayscale(100%)" video={Gif1} />
 			</Sequence>
 			<Sequence from={206} durationInFrames={129}>
 				<OpenDivName
@@ -112,6 +114,9 @@ export const MyRemotion = () => {
 			</Sequence>
 			<Sequence from={337} durationInFrames={40}>
 				<MiddleToRightLeftFullDiv color="#004766" />
+			</Sequence>
+			<Sequence from={383} durationInFrames={200}>
+				<OpenDivGif1 filter="grayscale(100%) blur(15px)" video={Gif2} />
 			</Sequence>
 			<Sequence from={385} durationInFrames={200}>
 				<SlideUpText size="40px" text="DEEPIKA" top="25%" />
