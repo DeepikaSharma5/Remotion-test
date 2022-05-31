@@ -5,20 +5,18 @@ import Logo from './Logo';
 
 export const ZoomLogo = () => {
 	return (
-		<div>
-			<div>
-				<Img
-					style={{
-						filter: 'grayscale(100%)',
-						opacity: '1',
-						position: 'absolute',
-					}}
-					src={Background}
-				/>
-			</div>
-			<div>
+		<>
+			<Img
+				style={{
+					filter: 'grayscale(100%)',
+					opacity: '1',
+					position: 'relative',
+				}}
+				src={Background}
+			/>
+			<>
 				<Logo />
-			</div>
-		</div>
+			</>
+		</>
 	);
 };

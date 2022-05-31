@@ -18,7 +18,7 @@ export const TopToMiddleLogo = () => {
 		},
 	});
 
-	const opacity = interpolate(progress, [0, 0.5], [-1000, -250], {
+	const opacity = interpolate(progress, [0, 0.5], [-1000, -220], {
 		extrapolateRight: 'clamp',
 	});
 
@@ -37,6 +37,8 @@ export const TopToMiddleLogo = () => {
 						display: 'block',
 						transform: `translateY(${opacity}px)`,
 						lineHeight: 1.1,
+						width: '25%',
+						height: '25%',
 					}}
 					src={MyLogo}
 				/>

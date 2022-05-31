@@ -1,24 +1,41 @@
 {
-	"name": "my-remotion",
-	"version": "1.0.0",
-	"description": "My Remotion video",
-	"scripts": {
-		"start": "remotion preview src/index.js",
-		"build": "remotion render src/index.js remotion-video out/video.mp4",
-		"upgrade": "remotion upgrade",
-		"test": "eslint src --ext ts,tsx,js,jsx"
-	},
-	"repository": {},
-	"license": "UNLICENSED",
-	"dependencies": {
-		"@remotion/bundler": "^3.0.0",
-		"@remotion/cli": "^3.0.0",
-		"@remotion/eslint-config": "^3.0.0",
-		"@remotion/renderer": "^3.0.0",
-		"eslint": "^8.14.0",
-		"prettier": "^2.6.2",
-		"react": "^18.0.0",
-		"react-dom": "^18.0.0",
-		"remotion": "^3.0.0"
-	}
+  "name": "my-remotion",
+  "version": "1.0.0",
+  "description": "My Remotion video",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "remotion render src/index.js remotion-video out/video.mp4",
+    "upgrade": "remotion upgrade",
+    "test": "eslint src --ext ts,tsx,js,jsx"
+  },
+  "repository": {},
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@remotion/bundler": "^3.0.12",
+    "@remotion/cli": "^3.0.12",
+    "@remotion/eslint-config": "^3.0.12",
+    "@remotion/gif": "^3.0.12",
+    "@remotion/player": "^3.0.12",
+    "@remotion/renderer": "^3.0.12",
+    "eslint": "^8.14.0",
+    "prettier": "^2.6.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "remotion": "^3.0.12",
+    "web-vitals": "^2.1.4",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

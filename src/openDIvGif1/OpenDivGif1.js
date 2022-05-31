@@ -1,10 +1,10 @@
-import {Img} from 'remotion';
 import React from 'react';
+import {Video} from 'remotion';
 
 export const OpenDivGif1 = ({video, filter}) => {
 	return (
 		<>
-			<Img
+			<Video
 				style={{
 					filter,
 				}}

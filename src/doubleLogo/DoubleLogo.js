@@ -12,7 +12,7 @@ export const DoubleLogo = ({maxWidth, marginTop, marginLeft}) => {
 						maxWidth,
 						marginTop,
 						marginLeft,
-						filter: 'grayscale(100%)',
+						filter: 'brightness(0) invert(1)',
 						opacity: '1',
 					}}
 					src={BSN}
@@ -25,7 +25,7 @@ export const DoubleLogo = ({maxWidth, marginTop, marginLeft}) => {
 						maxWidth,
 						marginTop,
 						marginLeft: '78%',
-						filter: 'grayscale(100%)',
+						filter: 'brightness(0) invert(1)',
 						opacity: '1',
 					}}
 					src={Nike}

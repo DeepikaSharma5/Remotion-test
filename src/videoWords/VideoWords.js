@@ -1,13 +1,10 @@
-import {Img} from 'remotion';
 import React from 'react';
-import BallBackground from '../assets/ballBackground.gif';
+import {Video} from 'remotion';
 
-export const VideoWords = () => {
+export const VideoWords = ({gif}) => {
 	return (
-		<div>
-			<div>
-				<Img src={BallBackground} />
-			</div>
-		</div>
+		<>
+			<Video src={gif} />
+		</>
 	);
 };

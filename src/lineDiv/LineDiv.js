@@ -3,14 +3,14 @@ import {useVideoConfig} from 'remotion';
 import React from 'react';
 import {AbsoluteFill, useCurrentFrame} from 'remotion';
 
-export const LineDiv = ({color, marginTop, marginLeft}) => {
+export const LineDiv = ({color, marginTop, marginLeft, width, translate}) => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
 	const config = useVideoConfig();
 
 	const progress = spring({
 		from: 163,
-		to: 7000,
+		to: width,
 		frame,
 		fps,
 		config: {mass: 1, damping: 1800},
@@ -29,9 +29,9 @@ export const LineDiv = ({color, marginTop, marginLeft}) => {
 			>
 				<svg
 					viewBox={`0 0 ${config.width} ${config.height}`}
-					width="7000px"
+					width={`${width}px`}
 					height="100px"
-					transform={`translate(${-275}, 0)`}
+					transform={`translate(${translate}, 0)`}
 				>
 					<g id="g10">
 						<path

@@ -1,7 +1,14 @@
 import './LineFont.styles.css';
 import {AbsoluteFill} from 'remotion';
 
-export const LineFont = ({titleText, titleColor, bottom, size, marginLeft}) => {
+export const LineFont = ({
+	titleText,
+	titleColor,
+	bottom,
+	size,
+	marginLeft,
+	fontWeight,
+}) => {
 	return (
 		<AbsoluteFill
 			className="typewriter"
@@ -14,7 +21,7 @@ export const LineFont = ({titleText, titleColor, bottom, size, marginLeft}) => {
 			<h1
 				style={{
 					fontFamily: 'SF Pro Text, Helvetica, Arial',
-					fontWeight: 'bold',
+					fontWeight: fontWeight || 'bold',
 					textAlign: 'center',
 					position: 'absolute',
 					bottom,
