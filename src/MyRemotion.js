@@ -22,10 +22,17 @@ import Gif5 from './assets/vid_5.mp4';
 import {SlideLeftText} from './slideLeftText/SlideLeftText';
 import {BorderGif} from './borderGif/BorderGif';
 import Gif6 from './assets/coach_video.mp4';
-
+import Video1 from './assets/vid_8.mp4';
+import Video2 from './assets/vid_6.mp4';
+import Video3 from './assets/vid_7.mp4';
+import {AudioFile} from './audioFile/AudioFile';
+import BackgroundMusic from './assets/backaudi.mp3';
 export const MyRemotion = () => {
 	return (
 		<div style={{flex: 1, backgroundColor: 'black'}}>
+			<Sequence from={0} durationInFrames={2000}>
+				<AudioFile audio={BackgroundMusic} />
+			</Sequence>
 			<Sequence from={0} durationInFrames={80}>
 				<ZoomLogo />
 			</Sequence>
@@ -38,8 +45,8 @@ export const MyRemotion = () => {
 			<Sequence from={94} durationInFrames={28}>
 				<RightLeftDiv color="#004766" />
 			</Sequence>
-			<Sequence from={120} durationInFrames={95}>
-				<VideoWords gif={Gif3} />
+			<Sequence from={120} durationInFrames={92}>
+				<VideoWords gif={Video1} />
 			</Sequence>
 			<Sequence from={122} durationInFrames={78}>
 				<TopToMiddleLogo />
@@ -74,12 +81,13 @@ export const MyRemotion = () => {
 			<Sequence from={194} durationInFrames={11}>
 				<MiddleToOpenDiv color="#4c9419" />
 			</Sequence>
+			<Sequence from={205} durationInFrames={130}>
+				<OpenDivGif1 filter="grayscale(100%)" video={Gif3} />
+			</Sequence>
 			<Sequence from={205} durationInFrames={9}>
 				<MiddleToTopTwoOpenDiv color="#4c9419" />
 			</Sequence>
-			<Sequence from={210} durationInFrames={125}>
-				<OpenDivGif1 filter="grayscale(100%)" video={Gif3} />
-			</Sequence>
+
 			<Sequence from={206} durationInFrames={129}>
 				<OpenDivName
 					titleColor="white"
@@ -208,7 +216,7 @@ export const MyRemotion = () => {
 				<MiddleToTopTwoOpenDiv color="black" />
 			</Sequence>
 			<Sequence from={835} durationInFrames={100}>
-				<VideoWords gif={Gif5} />
+				<VideoWords gif={Video2} />
 			</Sequence>
 			<Sequence from={935} durationInFrames={195}>
 				<VideoWords gif={Gif3} />
@@ -275,7 +283,7 @@ export const MyRemotion = () => {
 				/>
 			</Sequence>
 			<Sequence from={1130} durationInFrames={95}>
-				<VideoWords gif={Gif5} />
+				<VideoWords gif={Video3} />
 			</Sequence>
 			<Sequence from={1130} durationInFrames={9}>
 				<MiddleToTopTwoOpenDiv color="#4c9419" />
