@@ -11,15 +11,15 @@ export const MiddleToTopTwoOpenDiv = ({color}) => {
 		fps,
 		frame,
 		config: {
-			mass: 10,
+			mass: 50,
 			damping: 600,
 		},
 	});
 
-	const opacity = interpolate(progress, [0, 0.1], [-100, -650], {
+	const opacity = interpolate(progress, [0, 0.05], [-70, -650], {
 		extrapolateRight: 'clamp',
 	});
-	const opacity1 = interpolate(progress, [0, 0.1], [100, 650], {
+	const opacity1 = interpolate(progress, [0, 0.05], [70, 650], {
 		extrapolateRight: 'clamp',
 	});
 	return (

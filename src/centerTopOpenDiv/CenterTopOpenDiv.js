@@ -3,7 +3,7 @@ import {AbsoluteFill, interpolate, useCurrentFrame} from 'remotion';
 
 export const CenterTopOpenDiv = ({color}) => {
 	const frame = useCurrentFrame(); // 10
-	const opacity = interpolate(frame, [0, 8], [0, 80]);
+	const opacity = interpolate(frame, [0, 8], [0, 200]);
 	return (
 		<>
 			<AbsoluteFill style={{justifyContent: 'center', alignItems: 'center'}}>

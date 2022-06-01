@@ -1,10 +1,11 @@
+/* eslint-disable @remotion/warn-native-media-tag */
 import React from 'react';
-import {Video} from 'remotion';
 
 export const OpenDivGif1 = ({video, filter}) => {
 	return (
 		<>
-			<Video
+			<video
+				autoPlay
 				style={{
 					filter,
 				}}

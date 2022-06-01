@@ -1,10 +1,11 @@
-import {Video} from 'remotion';
+/* eslint-disable @remotion/warn-native-media-tag */
 import './BorderGif.styles.css';
 
 export const BorderGif = ({video}) => {
 	return (
 		<>
-			<Video
+			<video
+				autoPlay
 				className="slide-top"
 				src={video}
 				style={{

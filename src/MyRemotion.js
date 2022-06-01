@@ -38,19 +38,14 @@ export const MyRemotion = () => {
 			<Sequence from={94} durationInFrames={28}>
 				<RightLeftDiv color="#004766" />
 			</Sequence>
-			<Sequence from={120} durationInFrames={75}>
+			<Sequence from={120} durationInFrames={95}>
 				<VideoWords gif={Gif3} />
 			</Sequence>
 			<Sequence from={122} durationInFrames={78}>
 				<TopToMiddleLogo />
 			</Sequence>
 			<Sequence from={135} durationInFrames={65}>
-				<LineDiv
-					color="#4c9419"
-					marginTop="20.4%"
-					width="5000"
-					translate="-315"
-				/>
+				<LineDiv color="#4c9419" marginTop="20.5%" width="1300" />
 			</Sequence>
 			<Sequence from={140} durationInFrames={60}>
 				<LineFont
@@ -138,8 +133,7 @@ export const MyRemotion = () => {
 					color="#004766"
 					marginLeft="25%"
 					marginTop="35%"
-					width="2500"
-					translate="-150"
+					width="1500"
 				/>
 			</Sequence>
 			<Sequence from={395} durationInFrames={125}>
@@ -183,7 +177,7 @@ export const MyRemotion = () => {
 			<Sequence from={535} durationInFrames={140}>
 				<VideoWords gif={Gif3} />
 			</Sequence>
-			<Sequence from={675} durationInFrames={155}>
+			<Sequence from={673} durationInFrames={155}>
 				<VideoWords gif={Gif5} />
 			</Sequence>
 			<Sequence from={680} durationInFrames={150}>
@@ -210,20 +204,20 @@ export const MyRemotion = () => {
 					marginLeft="-28%"
 				/>
 			</Sequence>
-			<Sequence from={825} durationInFrames={15}>
+			<Sequence from={825} durationInFrames={100}>
 				<MiddleToTopTwoOpenDiv color="black" />
 			</Sequence>
 			<Sequence from={835} durationInFrames={100}>
 				<VideoWords gif={Gif5} />
 			</Sequence>
-			<Sequence from={935} durationInFrames={95}>
+			<Sequence from={935} durationInFrames={195}>
 				<VideoWords gif={Gif3} />
 			</Sequence>
-			<Sequence from={940} durationInFrames={90}>
+			<Sequence from={940} durationInFrames={190}>
 				<TopToMiddleLogo />
 			</Sequence>
 
-			<Sequence from={960} durationInFrames={70}>
+			<Sequence from={960} durationInFrames={170}>
 				<LineFont
 					titleColor="white"
 					titleText="DEEPIKA SRINIVASAN"
@@ -231,7 +225,7 @@ export const MyRemotion = () => {
 					size="50px"
 				/>
 			</Sequence>
-			<Sequence from={970} durationInFrames={60}>
+			<Sequence from={970} durationInFrames={160}>
 				<LineFont
 					titleColor="white"
 					titleText="WELLTECH"
@@ -240,7 +234,7 @@ export const MyRemotion = () => {
 					fontWeight="normal"
 				/>
 			</Sequence>
-			<Sequence from={980} durationInFrames={10}>
+			<Sequence from={980} durationInFrames={30}>
 				<LineFont
 					titleColor="white"
 					titleText="TEAMWORK."
@@ -248,7 +242,7 @@ export const MyRemotion = () => {
 					size="70px"
 				/>
 			</Sequence>
-			<Sequence from={990} durationInFrames={10}>
+			<Sequence from={1010} durationInFrames={30}>
 				<LineFont
 					titleColor="white"
 					titleText="RESPECT."
@@ -256,7 +250,7 @@ export const MyRemotion = () => {
 					size="70px"
 				/>
 			</Sequence>
-			<Sequence from={1000} durationInFrames={10}>
+			<Sequence from={1040} durationInFrames={30}>
 				<LineFont
 					titleColor="white"
 					titleText="ENJOYMENT."
@@ -264,7 +258,7 @@ export const MyRemotion = () => {
 					size="70px"
 				/>
 			</Sequence>
-			<Sequence from={1010} durationInFrames={10}>
+			<Sequence from={1070} durationInFrames={30}>
 				<LineFont
 					titleColor="white"
 					titleText="DISCIPLINE."
@@ -272,7 +266,7 @@ export const MyRemotion = () => {
 					size="70px"
 				/>
 			</Sequence>
-			<Sequence from={1020} durationInFrames={10}>
+			<Sequence from={1100} durationInFrames={30}>
 				<LineFont
 					titleColor="white"
 					titleText="SPORTSMANSHIP."
@@ -280,11 +274,11 @@ export const MyRemotion = () => {
 					size="70px"
 				/>
 			</Sequence>
-			<Sequence from={1035} durationInFrames={9}>
-				<MiddleToTopTwoOpenDiv color="#4c9419" />
-			</Sequence>
-			<Sequence from={1044} durationInFrames={95}>
+			<Sequence from={1130} durationInFrames={95}>
 				<VideoWords gif={Gif5} />
+			</Sequence>
+			<Sequence from={1130} durationInFrames={9}>
+				<MiddleToTopTwoOpenDiv color="#4c9419" />
 			</Sequence>
 		</div>
 	);

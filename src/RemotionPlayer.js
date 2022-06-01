@@ -11,7 +11,7 @@ export const RemotionPlayer = () => {
 				compositionWidth={1280}
 				compositionHeight={720}
 				durationInFrames={1250}
-				fps={30}
+				fps={20}
 				style={{
 					width: '100%',
 				}}

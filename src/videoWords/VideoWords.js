@@ -1,10 +1,10 @@
+/* eslint-disable @remotion/warn-native-media-tag */
 import React from 'react';
-import {Video} from 'remotion';
 
 export const VideoWords = ({gif}) => {
 	return (
 		<>
-			<Video src={gif} />
+			<video autoPlay src={gif} />
 		</>
 	);
 };
